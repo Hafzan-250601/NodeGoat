@@ -4,7 +4,6 @@ pipeline {
     stage('Build and install Contrast Assess Agent') {
       steps {
         sh '''
-        cd DevopsClassFront
         docker build -t nodegoat .
         '''
       }
