@@ -1,0 +1,7 @@
+api:
+  url: https://cs004-agents.contrastsecurity.com/Contrast
+  api_key: 0z5mjRvL3CIbY31ba4RJDhArXbAZw5KL
+  service_key: 88HFMKXKE0XL4FWS
+  user_name: agent_a37fe9bc-8793-47dd-bd34-6ebb72881771@DeloittePlt
+application:
+  name: nodegoat
