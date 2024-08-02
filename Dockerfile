@@ -14,8 +14,8 @@ RUN npm install --production --no-cache && \
 # Stage 2: Create the final image
 FROM node:12-alpine
 
-ENV USER node
-ENV WORKDIR /home/$USER/app
+ENV USER=node
+ENV WORKDIR=/home/$USER/app
 WORKDIR $WORKDIR
 
 # Copy node_modules from the build stage
