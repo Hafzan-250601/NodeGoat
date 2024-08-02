@@ -27,6 +27,8 @@ RUN chown $USER:$USER $WORKDIR
 # Copy the application code and set ownership
 COPY --chown=node . $WORKDIR
 
+COPY contrast_security.yaml $WORKDIR
+
 # In production environment uncomment the next line
 # RUN chown -R $USER:$USER /home/$USER && chmod -R g-s,o-rx /home/$USER && chmod -R o-wrx $WORKDIR
 
