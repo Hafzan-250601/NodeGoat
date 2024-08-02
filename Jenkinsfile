@@ -8,6 +8,13 @@ pipeline {
         '''
       }
     }
+    stage('Run the built image') {
+      steps {
+        sh '''
+        docker run -d -p 4000:4000 nodegoat
+        '''
+      }
+    }
     stage('Scan image using Trivy') {
       steps {
         sh '''
