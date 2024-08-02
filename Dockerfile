@@ -1,6 +1,8 @@
 # Stage 1: Build the application and install dependencies
 FROM node:12-alpine AS build
 
+RUN apk add --no-cache python2 make g++
+
 ENV WORKDIR /usr/src/app/
 WORKDIR $WORKDIR
 
